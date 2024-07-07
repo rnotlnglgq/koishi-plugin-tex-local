@@ -1,22 +1,50 @@
 {
-  "name": "@rnotlnglgq/koishi-plugin-tex-local",
-  "description": "",
+  "name": "koishi-plugin-tex-local",
+  "description": "Generate image when users send TeX commands.",
   "version": "0.0.1",
+  "contributors": [
+    "rnotlnglgq <rnotlnglgq@outlook.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnotlnglgq/koishi-plugin-tex-local.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rnotlnglgq/koishi-plugin-tex-local/issues"
+  },
+  "homepage": "https://github.com/rnotlnglgq/koishi-plugin-tex-local",
+  "keywords": [
+    "bot",
+    "chatbot",
+    "koishi",
+    "plugin",
+    "tex",
+    "math",
+    "render"
+  ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
-  "license": "MIT",
-  "scripts": {},
-  "keywords": [
-    "chatbot",
-    "koishi",
-    "plugin"
-  ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.9"
+  },
+  "koishi": {
+    "description": {
+      "en": "Generate image when users send TeX commands.",
+      "zh": "根据用户发送的TeX指令来生成图像."
+    },
+    "service": {
+      "required": []
+    },
+    "locales": [
+      "zh"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
